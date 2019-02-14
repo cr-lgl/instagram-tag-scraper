@@ -2,6 +2,7 @@
     "name": "cherry/instagram-tag-scraper",
     "license": "MIT",
     "require": {
+        "php": ">=7.1",
         "guzzlehttp/guzzle": "^6.3"
     },
     "autoload": {
