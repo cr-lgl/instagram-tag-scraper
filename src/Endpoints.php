@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types = 1);
-
 namespace InstagramTagScraper;
 
 /**
@@ -10,16 +8,17 @@ namespace InstagramTagScraper;
  */
 class Endpoints
 {
-    protected const BASE_URL = 'https://www.instagram.com/';
+    const BASE_URL = 'https://www.instagram.com/';
 
-    protected const SEARCH_TAG_URL = self::BASE_URL . 'explore/tags/';
+    const SEARCH_TAG_URL = self::BASE_URL . 'explore/tags/';
 
-    protected const MEDEA_URL = self::BASE_URL . 'p/';
+    const MEDEA_URL = self::BASE_URL . 'p/';
+
     /**
      * @param string $tag
      * @return string
      */
-    public static function tagUrl(string $tag): string
+    public static function tagUrl($tag)
     {
         return static::SEARCH_TAG_URL . urlencode($tag) . '?' . static::queryString();
     }
@@ -28,7 +27,7 @@ class Endpoints
      * @param string $shortCode
      * @return string
      */
-    public static function mediaUrl(string $shortCode): string
+    public static function mediaUrl($shortCode)
     {
         return static::MEDEA_URL . $shortCode . '?' . static::queryString();
     }
@@ -37,7 +36,7 @@ class Endpoints
      * @param array $queries
      * @return string
      */
-    protected static function queryString(array $queries = []): string
+    protected static function queryString($queries = [])
     {
         $queries['__a'] = 1;
 

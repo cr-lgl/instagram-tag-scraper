@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types = 1);
-
 namespace InstagramTagScraper\Http;
 
 /**
@@ -10,5 +8,5 @@ namespace InstagramTagScraper\Http;
  */
 class Status
 {
-    public const OK = 200;
+    const OK = 200;
 }

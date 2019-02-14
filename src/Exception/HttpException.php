@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types = 1);
-
 namespace Exception;
 
 use Psr\Http\Message\ResponseInterface;
@@ -23,7 +21,7 @@ class HttpException extends \RuntimeException
      * @param string $message
      * @param int $code
      */
-    public function __construct(ResponseInterface $response, string $message, int $code = 0)
+    public function __construct($response, $message, $code = 0)
     {
         $this->response = $response;
         parent::__construct("[{$this->convertMessage()}] {$message}", $code);
@@ -32,7 +30,7 @@ class HttpException extends \RuntimeException
     /**
      * @return string
      */
-    protected function convertMessage(): string
+    protected function convertMessage()
     {
         return "{$this->response->getStatusCode()}, {$this->response->getReasonPhrase()}";
     }
@@ -40,7 +38,7 @@ class HttpException extends \RuntimeException
     /**
      * @return ResponseInterface
      */
-    public function getResponse(): ResponseInterface
+    public function getResponse()
     {
         return $this->response;
     }

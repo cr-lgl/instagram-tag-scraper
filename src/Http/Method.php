@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types = 1);
-
 namespace InstagramTagScraper\Http;
 
 /**
@@ -10,7 +8,7 @@ namespace InstagramTagScraper\Http;
  */
 class Method
 {
-    public const GET = 'GET';
+    const GET = 'GET';
 
-    public const POST = 'POST';
+    const POST = 'POST';
 }
