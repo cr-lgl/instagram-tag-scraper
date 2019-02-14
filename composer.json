@@ -1,0 +1,16 @@
+{
+    "name": "cherry/instagram-tag-scraper",
+    "license": "MIT",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "InstagramTagScraper\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "symfony/var-dumper": "^4.2"
+    }
+}
