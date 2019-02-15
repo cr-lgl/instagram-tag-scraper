@@ -1,5 +1,5 @@
 {
-    "name": "cherry/instagram-tag-scraper",
+    "name": "cherryred5959/instagram-tag-scraper",
     "license": "MIT",
     "require": {
         "php": ">=5.6",
