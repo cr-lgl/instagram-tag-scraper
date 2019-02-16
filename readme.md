@@ -2,6 +2,18 @@
 
 ### Instagram tag search for top recently list 
 
+## Installing
+```
+composer require cherryred5959/instagram-tag-scraper
+```
+
+## Usage
+``` php
+$client = new \GuzzleHttp\Client();
+$instagram = new \InstagramTagScraper\Instagram($client);
+$responses = $instagram->search('something');
+```
+
 ## Development
 ```
 composer install
