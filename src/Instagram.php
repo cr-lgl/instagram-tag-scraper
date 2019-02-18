@@ -2,7 +2,7 @@
 
 namespace InstagramTagScraper;
 
-use Exception\HttpException;
+use InstagramTagScraper\Exception\HttpException;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Pool;
 use InstagramTagScraper\Http\Method;
