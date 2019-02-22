@@ -1,6 +1,6 @@
 {
     "name": "cherryred5959/instagram-tag-scraper",
-    "license": "Apache-2.0",
+    "license": "MIT",
     "require": {
         "php": ">=5.6",
         "guzzlehttp/guzzle": "^6.3"
