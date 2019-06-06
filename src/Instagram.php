@@ -1,17 +1,17 @@
 <?php
 
-namespace InstagramTagScraper;
+namespace Cherryred5959\InstagramTagScraper;
 
-use InstagramTagScraper\Exception\HttpException;
+use Cherryred5959\InstagramTagScraper\Exception\HttpException;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Pool;
-use InstagramTagScraper\Http\Method;
-use InstagramTagScraper\Http\Status;
+use Cherryred5959\InstagramTagScraper\Http\Method;
+use Cherryred5959\InstagramTagScraper\Http\Status;
 use Psr\Http\Message\ResponseInterface;
 
 /**
  * Class Instagram
- * @package InstagramTagScraper
+ * @package Cherryred5959\InstagramTagScraper
  */
 class Instagram
 {

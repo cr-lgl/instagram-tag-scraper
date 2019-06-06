@@ -1,6 +1,6 @@
 <?php
 
-namespace InstagramTagScraper\Exception;
+namespace Cherryred5959\InstagramTagScraper\Exception;
 
 use Psr\Http\Message\ResponseInterface;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace InstagramTagScraper\Http;
+namespace Cherryred5959\InstagramTagScraper\Http;
 
 /**
  * Class Method

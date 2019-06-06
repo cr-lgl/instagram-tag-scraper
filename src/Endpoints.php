@@ -1,10 +1,10 @@
 <?php
 
-namespace InstagramTagScraper;
+namespace Cherryred5959\InstagramTagScraper;
 
 /**
  * Class Endpoints
- * @package InstagramTagScraper
+ * @package Cherryred5959\InstagramTagScraper
  */
 class Endpoints
 {

@@ -3,4 +3,4 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 /** @noinspection PhpUnhandledExceptionInspection*/
-(new \InstagramTagScraper\Instagram(new \GuzzleHttp\Client()))->search('iphone');
+(new \Cherryred5959\InstagramTagScraper\Instagram(new \GuzzleHttp\Client()))->search('iphone');
