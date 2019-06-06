@@ -1,6 +1,9 @@
 <?php
 
+use Cherryred5959\InstagramTagScraper\Instagram;
+use GuzzleHttp\Client;
+
 require_once __DIR__ . '/../vendor/autoload.php';
 
 /** @noinspection PhpUnhandledExceptionInspection*/
-(new \Cherryred5959\InstagramTagScraper\Instagram(new \GuzzleHttp\Client()))->search('iphone');
+(new Instagram(new Client()))->search('iphone');
