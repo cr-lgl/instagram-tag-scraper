@@ -2,7 +2,7 @@
 
 namespace Cherryred5959\InstagramTagScraper;
 
-use Cherryred5959\InstagramTagScraper\Exception\HttpException;
+use Cherryred5959\InstagramTagScraper\Exceptions\HttpException;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Pool;
 use Cherryred5959\InstagramTagScraper\Http\Method;
